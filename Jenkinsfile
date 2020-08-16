@@ -2,7 +2,7 @@ node {
     git url: 'https://github.com/pravitha2586/project-example.git'
 
     // Get Artifactory server instance, defined in the Artifactory Plugin administration page.
-    def server = Artifactory.server "tomcat"
+    def server = Artifactory.server "artifactory-dev-server"
 
     // Read the upload spec and upload files to Artifactory.
     def downloadSpec =
